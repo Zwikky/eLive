@@ -11,4 +11,11 @@ export class AboutPage {
 
   }
 
+  events: string;
+
+  ionViewWillEnter(){
+     this.events = 'this_week';
+
+}
+
 }

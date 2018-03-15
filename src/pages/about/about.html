@@ -1,11 +1,189 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      About
-    </ion-title>
-  </ion-navbar>
+    <ion-toolbar color="light">
+        <ion-buttons start>
+          <button ion-button icon-only color="royal">
+            <ion-icon name="search"></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-title>Upcoming Events</ion-title>
+        <ion-buttons end>
+          <button ion-button icon-only color="royal">
+            <ion-icon name="contact"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+
+    
+        <ion-segment [(ngModel)]="events">
+          <ion-segment-button value="this_week">
+            This Week
+          </ion-segment-button>
+          <ion-segment-button value="next_week">
+            Next Week
+          </ion-segment-button>
+          <ion-segment-button value="this_month">
+            This Month
+            </ion-segment-button>          
+        </ion-segment>
+    
+      
+      <div [ngSwitch]="events">
+        <ion-list *ngSwitchCase="'this_week'">
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../assets/imgs/event1.jpg">
+            </ion-thumbnail>
+            <h2>Big Guns Conference</h2>
+            <p>Esibayeni Lodge</p>
+            <p>Saturday, 17 March</p>
+          </ion-item>
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../assets/imgs/event2.jpg">
+              </ion-thumbnail>
+              <h2>Big Guns Conference</h2>
+              <p>Esibayeni Lodge</p>
+              <p>Saturday, 17 March</p>
+            </ion-item>
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="../assets/imgs/event3.jpg">
+                </ion-thumbnail>
+                <h2>Big Guns Conference</h2>
+                <p>Esibayeni Lodge</p>
+                <p>Friday, 16 March</p>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../assets/imgs/event1.jpg">
+                  </ion-thumbnail>
+                  <h2>Big Guns Conference</h2>
+                  <p>Esibayeni Lodge</p>
+                  <p>Saturday, 17 March</p>
+                </ion-item>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="../assets/imgs/event2.jpg">
+                    </ion-thumbnail>
+                    <h2>Big Guns Conference</h2>
+                    <p>Esibayeni Lodge</p>
+                    <p>Saturday, 17 March</p>
+                  </ion-item>
+                  <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="../assets/imgs/event3.jpg">
+                      </ion-thumbnail>
+                      <h2>Big Guns Conference</h2>
+                      <p>Esibayeni Lodge</p>
+                      <p>Saturday, 17 March</p>
+                    </ion-item>
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'next_week'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="../assets/imgs/event3.jpg">
+                </ion-thumbnail>
+                <h2>Big Guns Conference</h2>
+                <p>Esibayeni Lodge</p>
+                <p>Saturday, 17 March</p>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../assets/imgs/event1.jpg">
+                  </ion-thumbnail>
+                  <h2>Big Guns Conference</h2>
+                  <p>Esibayeni Lodge</p>
+                  <p>Saturday, 17 March</p>
+                </ion-item>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="../assets/imgs/event2.jpg">
+                    </ion-thumbnail>
+                    <h2>Big Guns Conference</h2>
+                    <p>Esibayeni Lodge</p>
+                    <p>Friday, 16 March</p>
+                  </ion-item>
+                  <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="../assets/imgs/event1.jpg">
+                      </ion-thumbnail>
+                      <h2>Big Guns Conference</h2>
+                      <p>Esibayeni Lodge</p>
+                      <p>Saturday, 17 March</p>
+                    </ion-item>
+                    <ion-item>
+                        <ion-thumbnail item-start>
+                          <img src="../assets/imgs/event2.jpg">
+                        </ion-thumbnail>
+                        <h2>Big Guns Conference</h2>
+                        <p>Esibayeni Lodge</p>
+                        <p>Saturday, 17 March</p>
+                      </ion-item>
+                      <ion-item>
+                          <ion-thumbnail item-start>
+                            <img src="../assets/imgs/event3.jpg">
+                          </ion-thumbnail>
+                          <h2>Big Guns Conference</h2>
+                          <p>Esibayeni Lodge</p>
+                          <p>Saturday, 17 March</p>
+                        </ion-item>
+        </ion-list>
+
+
+        <ion-list *ngSwitchCase="'this_month'">
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="../assets/imgs/event2.jpg">
+                </ion-thumbnail>
+                <h2>Big Guns Conference</h2>
+                <p>Esibayeni Lodge</p>
+                <p>Saturday, 17 March</p>
+              </ion-item>
+              <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../assets/imgs/event3.jpg">
+                  </ion-thumbnail>
+                  <h2>Big Guns Conference</h2>
+                  <p>Esibayeni Lodge</p>
+                  <p>Saturday, 17 March</p>
+                </ion-item>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <img src="../assets/imgs/event1.jpg">
+                    </ion-thumbnail>
+                    <h2>Big Guns Conference</h2>
+                    <p>Esibayeni Lodge</p>
+                    <p>Friday, 16 March</p>
+                  </ion-item>
+                  <ion-item>
+                      <ion-thumbnail item-start>
+                        <img src="../assets/imgs/event3.jpg">
+                      </ion-thumbnail>
+                      <h2>Big Guns Conference</h2>
+                      <p>Esibayeni Lodge</p>
+                      <p>Saturday, 17 March</p>
+                    </ion-item>
+                    <ion-item>
+                        <ion-thumbnail item-start>
+                          <img src="../assets/imgs/event2.jpg">
+                        </ion-thumbnail>
+                        <h2>Big Guns Conference</h2>
+                        <p>Esibayeni Lodge</p>
+                        <p>Saturday, 17 March</p>
+                      </ion-item>
+                      <ion-item>
+                          <ion-thumbnail item-start>
+                            <img src="../assets/imgs/event3.jpg">
+                          </ion-thumbnail>
+                          <h2>Big Guns Conference</h2>
+                          <p>Esibayeni Lodge</p>
+                          <p>Saturday, 17 March</p>
+                        </ion-item>
+          </ion-list>
+      </div>
 
 </ion-content>
