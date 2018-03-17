@@ -22,4 +22,8 @@ export class ShowPage {
     console.log('ionViewDidLoad ShowPage');
   }
 
+  buyTickets(){
+    this.navCtrl.push("TicketsPage");
+  }
+
 }

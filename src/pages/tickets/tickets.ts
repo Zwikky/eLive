@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the ShowsPage page.
+ * Generated class for the TicketsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-shows',
-  templateUrl: 'shows.html',
+  selector: 'page-tickets',
+  templateUrl: 'tickets.html',
 })
-export class ShowsPage {
+export class TicketsPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ShowsPage');
-  }
-
-  getShow(){
-    this.navCtrl.push("ShowPage");
+    console.log('ionViewDidLoad TicketsPage');
   }
 
 }

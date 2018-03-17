@@ -7,7 +7,7 @@
     </ion-buttons>
     <ion-title>eLive</ion-title>
     <ion-buttons end>
-      <button ion-button icon-only color="royal">
+      <button ion-button icon-only color="royal" (click)="openLogin()">
         <ion-icon name="contact"></ion-icon>
       </button>
     </ion-buttons>
@@ -32,11 +32,12 @@
            <h1>eLive Categories</h1> 
           </ion-item>
 
-          <button ion-item color="light" (click)="login()">
+          <button ion-item color="light" (click)="getShows()">
               <ion-avatar item-start text-center>
                 <img src="assets/imgs/shows.jpg">
               </ion-avatar>
               <h1 style="padding-left: 40px">Live Shows</h1>
+              <ion-badge color="danger" item-end>2</ion-badge>
             </button>
 
             <button ion-item>
@@ -44,6 +45,7 @@
                   <img src="assets/imgs/cinema.jpg">
                 </ion-avatar>
                 <h1 style="padding-left: 40px">Cinema</h1>
+                <ion-badge color="danger" item-end>20</ion-badge>
               </button>
             
               <button ion-item color="light">

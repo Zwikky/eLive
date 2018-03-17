@@ -1,18 +1,78 @@
-<!--
-  Generated template for the ShowPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
+    <ion-toolbar color="light">
+      <ion-title>Big Guns Conference</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content>
+      <ion-slides pager autoplay="3000">
+          <ion-slide>
+            <img src="assets/imgs/event1.jpg" />
+          </ion-slide>
+          <ion-slide>
+              <img src="assets/imgs/event3.jpg" />
+            </ion-slide>
+            <ion-slide>
+                <img src="assets/imgs/event2.jpg" />
+              </ion-slide>
+        </ion-slides>
+          <ion-fab right bottom>
+              <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+              <ion-fab-list side="left">
+                <button ion-fab color="danger"><ion-icon name="call"></ion-icon></button>
+                <button ion-fab color="primary"><ion-icon name="share"></ion-icon></button>
+                <button ion-fab color="dark"><ion-icon name="globe"></ion-icon></button>
+              </ion-fab-list>
+            </ion-fab>
+            <ion-card class="card-secondary">
+                <ion-card-header>
+                  <span ion-text color="primary">More Details</span>
+                </ion-card-header>
+            
+                <ion-list no-lines>                 
+            
+                  <ion-item ion-item>
+                    <ion-icon name="calendar" item-left color="light"></ion-icon>
+                    23 March 2018
+                  </ion-item>
+            
+                  <ion-item ion-item>
+                    <ion-icon name="home" item-left color="light"></ion-icon>
+                    Lugogo Sun Hotel
+                  </ion-item>
+            
+                  <ion-item ion-item>
+                    <ion-icon name="bowtie" item-left color="light"></ion-icon>
+                    Smart Casual
+                  </ion-item>
+                  <ion-card>
+                    <button ion-item>
+                    <ion-icon name="cash" item-left color="primary"></ion-icon>
+                      VVIP: E450.00
+                    </button>
+                    <button ion-item>
+                    <ion-icon name="cash" item-left color="primary"></ion-icon>
+                      VIP: E250.00
+                    </button>
+                    <button ion-item>
+                    <ion-icon name="cash" item-left color="primary"></ion-icon>
+                      General: E150.00
+                    </button>
+                    <button ion-item full color="danger" (click)="buyTickets()">
+                      <ion-icon name="card" item-right></ion-icon>
+                      Buy Tickets
+                    </button>
+                  </ion-card>
+                  
+                    
+                    
+                    <ion-item ion-item text-wrap>
+                    <ion-icon name="information-circle" item-left color="light"></ion-icon>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  </ion-item>
+            
+                </ion-list>
+              </ion-card>
 
-  <ion-navbar>
-    <ion-title>show</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
 
 </ion-content>
